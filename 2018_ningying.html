@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible"
+				content="ie=edge">
+	<meta name="description"
+				content="In den 90er Jahren entstand in Reaktion auf die radikale Modernisierung Pekings eine Trilogie der chinesischen Regisseurin Ning Ying, bestehend aus den Filmen	For Fun (1993),	On the Beat (1995) und	I love Beijing (2001). Die Peking-Trilogie ist ein außergewöhnliches Dokument über einen sozioökonomischen Übergang,	der sich über drei Generationen erstreckt: Vom Fußgänger zur Polizei auf dem Fahrrad bis hin zum Taxifahrer. Vom italienischen Neorealismus und der französischen Nouvelle Vague beeinflusst, entschied sich Ning Ying dafür, Dokumentarfilm und Fiktion	zu mischen, was als formales Element alle drei Filme verbindet. Dennoch verlagern sich die Perspektive und die Filmspracheder Regisseurin — als wären die Filme selbst genauso Teil der Transformation, von der sie erzählen. Die 1959 geborene Ning Ying studierte u.a. mit Zhang Yimou und Chen Kaige an der Filmakademie in Peking.">
+
+	<title>Ning Ying — Neues asiatisches Kino</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900"
+				rel="stylesheet">
+	<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/tiny-slider.css">
+
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 1rem 1rem 5rem 1rem;
+			font-family: 'Lato', sans-serif;
+			font-size: 16px;
+			line-height: 1.4;
+		}
+
+		@media screen and (min-width: 800px) {
+			body {
+				padding: 0 0 5rem 0;
+				display: grid;
+				grid-template-columns: 1fr 800px 1fr;
+				grid-template-areas: ". c .";
+				font-size: 18px;
+			}
+		}
+
+		.container {
+			grid-area: c;
+			max-width: 1000px;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: underline;
+		}
+
+		h2,
+		h3 {
+			font-size: 1.5rem;
+		}
+
+		h3 small {
+			font-size: inherit;
+			font-weight: 300;
+			padding-left: .5em;
+		}
+
+
+		blockquote {
+			margin-left: 0;
+			line-height: 1.2;
+		}
+
+		@media screen and (min-width: 800px) {
+			.columns {
+				column-count: 2;
+				column-gap: 1em;
+				margin-bottom: 1.5em;
+				margin-top: 1.5em;
+			}
+		}
+
+		.columns p:first-of-type {
+			margin-top: 0;
+		}
+
+		.break {
+			break-inside: avoid;
+		}
+
+		.columns p:first-of-type {
+			text-indent: 0;
+		}
+
+		.columns p {
+			text-indent: 1em;
+		}
+
+		article,
+		#titel {
+			margin-top: 0rem;
+			margin-bottom: 2rem;
+		}
+
+		@media screen and (min-width: 800px) {
+
+			article,
+			#titel {
+				margin-top: 3rem;
+				margin-bottom: 3rem;
+			}
+		}
+
+		#titel {
+			background-color: #ffdd00;
+		}
+
+		@media screen and (min-width: 800px) {
+			#titel {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 1rem;
+			}
+		}
+
+		#intro {
+			font-size: 115%;
+			background-color: #ffdd00;
+			padding: 1.5em .75em;
+		}
+
+		#programm table {
+			border-collapse: collapse;
+
+		}
+
+		@media screen and (max-width: 800px) {
+			#programm table tbody {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-auto-flow: row;
+			}
+
+			#programm table tr {
+				display: grid;
+				grid-auto-flow: row;
+			}
+
+
+			#programm table tr:last-child {
+				border-right: none;
+			}
+
+			#programm table tr>* {
+				text-align: left;
+				border-bottom: 1px solid black;
+				padding: .2em .6em;
+				height: 4em;
+			}
+
+			#programm table tr>*:first-child {
+				height: 2.5em;
+			}
+
+			#programm table tr>*:last-child {
+				border-bottom: none;
+			}
+		}
+
+		@media screen and (min-width: 800px) {
+
+			#programm table tr td,
+			#programm table tr th {
+				width: 12.5%;
+				vertical-align: top;
+			}
+
+			#programm table tr:nth-child(2) td,
+			#programm table tr:nth-child(2) th {
+				border-bottom: 1px solid #000;
+				border-top: 1px solid #000;
+			}
+		}
+
+		#titel {
+			padding: .75em;
+			line-height: 2.5em;
+			margin-bottom: 1em;
+		}
+
+		#titel h1,
+		#titel h2 {
+			font-size: 380%;
+			margin: 0;
+			display: inline;
+		}
+
+		#titel small {
+			display: block;
+			font-size: 120%;
+			margin-bottom: .75em;
+			margin-top: .3em;
+			line-height: initial;
+		}
+
+		#titel small:first-of-type {
+			margin-bottom: 1.5em;
+		}
+
+		#titel h2 {
+			margin-top: 2em;
+		}
+
+		@media screen and (min-width: 800px) {
+			#titel {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: repeat(4, 1.3em);
+				font-size: 380%;
+				grid-auto-flow: column;
+				grid-gap: 0 .75em;
+				align-items: center;
+				line-height: inherit;
+				padding: .75em .75em;
+				margin-top: 1rem;
+			}
+
+			#titel h1,
+			#titel h2 {
+				display: initial;
+				font-size: inherit;
+				margin: 0;
+			}
+
+			#titel small {
+				font-size: 35%;
+			}
+
+			#titel small:first-of-type {
+				margin-bottom: initial;
+			}
+
+			#titel small:nth-of-type(2) {
+				order: 1;
+			}
+
+			#titel h2:nth-of-type(1) {
+				order: 2;
+			}
+
+			#titel h2:nth-of-type(2) {
+				order: 3;
+			}
+
+			#titel h2:nth-of-type(3) {
+				order: 4;
+			}
+		}
+
+
+		#stillsNav {
+			display: flex;
+			height: .7em;
+		}
+
+		#stillsNav>* {
+			flex-grow: 1;
+			background-color: #ffdd00;
+		}
+
+		#stillsNav>*.tns-nav-active {
+			background-color: black;
+		}
+
+		.tns-nav-active:focus {
+			outline: 0;
+		}
+
+		#stills {
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+
+		@media screen and (min-width: 800px) {
+			#stills {
+				margin-bottom: 3em;
+			}
+		}
+
+		#stills img {
+			max-width: 100%;
+			display: block;
+		}
+
+		#stills figure {
+			margin: 0;
+			position: relative;
+		}
+
+		#stills figcaption {
+			position: absolute;
+			right: 0;
+			top: 0;
+			writing-mode: vertical-rl;
+			background-color: #ffdd00;
+			padding-top: .5em;
+			padding-bottom: .5em;
+			line-height: 1.7em;
+		}
+
+		.sliderNav {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media screen and (min-width: 800px) {
+			.sliderNav {
+				display: flex;
+				flex-direction: row;
+			}
+		}
+
+		.sliderNav li {
+			flex-grow: 1;
+			background-color: #ffdd00;
+			padding: .5em;
+		}
+
+		.sliderNav .tns-nav-active {
+			background-color: #000;
+			color: #fff;
+		}
+
+		#texte section p:first-of-type::first-letter {
+			float: left;
+			font-size: 3em;
+			padding-right: .2em;
+
+		}
+
+		#impressum section.cta {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media screen and (min-width: 800px) {
+			#impressum section {
+				display: flex;
+			}
+
+			#impressum section.cta {
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+		}
+
+		#impressum section.cta>a {
+			background-color: #ffdd00;
+			padding: .5em;
+			text-decoration: none;
+			text-align: center;
+		}
+
+		#impressum section.cta>a:hover {
+			background-color: #000;
+			color: #fff;
+		}
+
+		#nav {
+			margin-bottom: 1em;
+		}
+
+		@media screen and (min-width: 800px) {
+			#nav {
+				margin-top: 2em;
+				margin-bottom: 0;
+			}
+		}
+
+		#nav ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			flex-direction: column;
+			background-color: #ffdd00;
+			max-height: 0;
+			overflow-y: hidden;
+			transition: max-height .5s ease-out;
+		}
+
+		#nav.open ul {
+			max-height: 14em;
+		}
+
+		#nav ul li {
+			border-bottom: 1px solid white;
+			padding: 10px;
+		}
+
+		#nav ul li:hover {
+			background-color: #000;
+			color: #fff;
+		}
+
+		#nav ul li a {
+			text-decoration: none;
+		}
+
+
+		#nav h2 {
+			font-size: inherit;
+			/* margin-top: 2em; */
+		}
+
+		#nav h2::before {
+			content: url('img/2018_ning/hamburgermenu_open.svg');
+			padding-right: 1em;
+		}
+
+		#nav.open h2::before {
+			content: url('img/2018_ning/hamburgermenu_close.svg');
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div id="nav">
+			<h2>
+
+				Neues asiatisches Kino
+			</h2>
+
+			<ul>
+				<li>
+					<a href="2019_ginakim.html">2019 &nbsp;&nbsp;Gina Kim</a>
+				</li>
+				<li class="active">
+					<a href="2018_ningying.html">2018 &nbsp;&nbsp;Ning Ying</a>
+				</li>
+				<li>
+					<a href="2017_yangyonghi.html">2017 &nbsp;&nbsp;Yang Yonghi</a>
+				</li>
+				<li>
+					<a href="2016_hamaguchi.html">2016 &nbsp;&nbsp;Hamaguchi Ryusuke</a>
+				</li>
+				<li>
+					<a href="2015_whangcheolmean.html">2015 &nbsp;&nbsp;Whang Cheol-Mean</a>
+				</li>
+			</ul>
+		</div>
+		<header id="titel">
+			<h1>Neues </h1>
+			<h1>asiatisches </h1>
+			<h1>Kino</h1>
+			<small>Werkstattkino München
+				<br>11.&thinsp;—&thinsp;17. Januar 2018</small>
+			<h2></h2>
+			<h2>宁瀛 &nbsp;</h2>
+			<h2>Ning Ying</h2>
+			<small>北京三部曲
+				<br>Die Peking-Trilogie</small>
+		</header>
+
+		<article id="stills">
+			<div id="stillsSlider">
+				<div>
+					<figure>
+
+						<img src="img/2018_ning/NingYing_ForFun.jpg"
+								 alt="For Fun">
+						<figcaption>For Fun</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+
+						<img src="img/2018_ning/NingYing_ForFun_2.jpg"
+								 alt="For Fun">
+						<figcaption>For Fun</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="img/2018_ning/NingYing_OnTheBeat_1.jpg"
+								 alt="On the Beat">
+						<figcaption>On the Beat</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="img/2018_ning/NingYing_OnTheBeat_2.jpg"
+								 alt="On the Beat">
+						<figcaption>On the Beat</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="img/2018_ning/NingYing_OnTheBeat_4.jpg"
+								 alt="On the Beat">
+						<figcaption>On the Beat</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="img/2018_ning/NingYing_ILoveBejing_4.jpg"
+								 alt="I Love Bejing">
+						<figcaption>I Love Bejing</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="img/2018_ning/NingYing_ILoveBejing_2.jpg"
+								 alt="I Love Bejing">
+						<figcaption>I Love Bejing</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="img/2018_ning/NingYing_ILoveBejing_1.jpg"
+								 alt="I Love Bejing">
+						<figcaption>I Love Bejing</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="img/2018_ning/JohannaPaulineMaier_FragmenteeinerReisenachChina.jpg"
+								 alt="Fragmente einer Reise nach China">
+						<figcaption>Fragmente einer Reise nach China</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="img/2018_ning/JohannaPaulineMaier_FragmenteeinerReisenachChina_2.jpg"
+								 alt="Fragmente einer Reise nach China">
+						<figcaption>Fragmente einer Reise nach China</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="img/2018_ning/JohannaPaulineMaier_FragmenteeinerReisenachChina_3.jpg"
+								 alt="Fragmente einer Reise nach China">
+						<figcaption>Fragmente einer Reise nach China</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div id="stillsNav">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</article>
+		<article id="intro"
+						 class="columns">
+
+			<p>In den 90er Jahren entstand in Reaktion auf die radikale Modernisierung Pekings eine Trilogie der chinesischen Regisseurin
+				Ning Ying, bestehend aus den Filmen
+				<cite>For Fun</cite> (1993),
+				<cite>On the Beat</cite> (1995) und
+				<cite>I love Beijing</cite> (2001). Die Peking-Trilogie ist ein außergewöhnliches Dokument über einen sozioökonomischen Übergang,
+				der sich über drei Generationen erstreckt: Vom Fußgänger zur Polizei auf dem Fahrrad bis hin zum Taxifahrer. Vom italienischen
+				Neorealismus und der französischen Nouvelle Vague beeinflusst, entschied sich Ning Ying dafür, Dokumentarfilm und Fiktion
+				zu mischen, was als formales Element alle drei Filme verbindet. Dennoch verlagern sich die Perspektive und die Filmsprache
+				der Regisseurin — als wären die Filme selbst genauso Teil der Transformation, von der sie erzählen. Die 1959 geborene
+				Ning Ying studierte u.a. mit Zhang Yimou und Chen Kaige an der Filmakademie in Peking. </p>
+
+			<p>Noch während ihres Studiums ging sie nach Europa und arbeitete als Regieassistentin für Bernardo Bertoluccis China-Epos
+				<cite>Der letzte Kaiser</cite>. Zurück in China begann Ning Ying, ihre eigenen Filme zu drehen, und ist dort inzwischen eine
+				auch kommerziell erfolgreiche Regisseurin. </p>
+			<p>Das Programm wird von der Filmemacherin Johanna Pauline Maier kuratiert. Die Absolventin der HFF München studierte von
+				1999 bis 2001 an der Filmakademie in Peking und drehte in dieser Zeit Videomaterial über die Transformierung der Stadt,
+				das sie nun mit 15 Jahren Abstand wieder aufgegriffen hat. Der daraus entstandene Film
+				<cite>Fragmente einer Reise nach China (AT)
+				</cite> wird im Rahmen der Reihe ebenfalls gezeigt. Johanna Pauline Maier ist bei den Vorführungen anwesend und wird
+				Fragen zu den Filmen beantworten.</p>
+
+		</article>
+		<article id="programm">
+			<h2>Programm</h2>
+			<table>
+				<tr>
+					<th></th>
+					<th>Do, 11.1.</th>
+					<th>Fr, 12.1.</th>
+					<th>Sa, 13.1.</th>
+					<th>So, 14.1.</th>
+					<th>Mo, 15.1.</th>
+					<th>Di, 16.1.</th>
+					<th>Mi, 17.1.</th>
+				</tr>
+				<tr>
+					<th>18:00 Uhr</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>Fragmente einer Reise nach China</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>20:00 Uhr</th>
+					<td>For Fun*</td>
+					<td>On the Beat*</td>
+					<td>I Love Beijing*</td>
+					<td>Fragmente einer Reise nach China*</td>
+					<td>For Fun</td>
+					<td>On the Beat</td>
+					<td>I Love Beijing</td>
+				</tr>
+			</table>
+			<p>* In Anwesenheit von Johanna Pauline Maier</p>
+			<p>Werkstattkino
+				<br> Fraunhoferstr. 9, München
+				<br> Tel. 089 2607250
+				<br> Eintritt: 6 €</p>
+		</article>
+		<article id="filme">
+			<header>
+				<ul id="filmeNav"
+						class="sliderNav">
+					<li>
+						For Fun
+					</li>
+					<li>
+						On the Beat
+					</li>
+					<li>
+						I Love Beijing
+					</li>
+					<li>
+						Fragmente einer Reise nach China
+					</li>
+				</ul>
+			</header>
+
+			<div id="filmeSlider">
+				<section id="forfun">
+					<h3>For Fun
+						<small>找乐</small>
+						<small>Zhao le</small>
+					</h3>
+					<div class="columns">
+						<p> Der erste Film der Trilogie eröffnet mit einer Kamerafahrt durch die Straßen von Peking, die von einem Lied aus der
+							Dreigroschenoper begleitet ist — ein humorvoller Hinweis auf die grenzüberschreitende Perspektive der Regisseurin
+							auf das neue China: Ein alter Mann wird gezwungen, sich von seiner lebenslangen Arbeit als Hausmeister des örtlichen
+							Pekingopernhauses zurückzuziehen. Er hat auf einmal viel Zeit und wandert auf der Suche nach neuen Beschäftigungen
+							durch die Stadt. Doch diese ist ihm in all den Jahren seines Lebens im Theater fremd geworden. In einem Park trifft
+							er auf eine Gruppe älterer, streitsüchtiger Amateursänger und beginnt, die Männer zu einer eigenen Truppe zu organisieren
+							— wohlgemerkt mit sich selbst als Chef. In ihrem einfachen, realistischen Stil mit einem präzisen und doch liebevollen
+							Blick zeichnet Ning Ying ihre Figuren und deren komplexe Bedürfnisse.</p>
+						<figure>
+							<blockquote>Ich interessiere mich für diese Momente der Gegenwart, die dabei sind zu verschwinden. Sie sind dabei, sogar aus unserer
+								Erinnerung zu verschwinden. Lebensweisen, die es seit Tausenden von Jahren gibt, sind in wenigen Jahren durch eine
+								von Massenmedien und Konsum geprägte Kultur ausgegrenzt und ausgelöscht worden.</blockquote>
+							<figcaption>
+								<cite>Ning Ying</cite>
+							</figcaption>
+						</figure>
+					</div>
+					<footer>Spielfilm, 97 min, China 1993. Regie: Ning Ying, Buch: Ning Ying, Ning Dai, nach einem Roman von Chen Jiangong, Kamera:
+						Xiao Feng, Darsteller: Huang Zongluo, Huang Wenjie, Han Shanxu Mandarin mit englischen Untertiteln</footer>
+
+				</section>
+				<section id="onthebeat">
+					<h3>On the Beat
+						<small>民警故事</small>
+						<small>Minjing gushi</small>
+					</h3>
+					<div class="columns">
+						<p>Mit dem Fahrrad durchqueren ein Polizist und sein junger Kollege ein Stadtviertel aus Altstadtgassen und den daran
+							angrenzenden, imposanten Wolkenkratzern. Sie setzen die Ordnung um, die ihnen anvertraut wurde. Das moderne städtische
+							Leben präsentiert sich als eine bloßgestellte Reihe von Verhandlungen zwischen Menschen, die versuchen, sich ihre
+							eigenen Schicksale anzueignen, und einer Staatsmaschine, die in die intimsten Angelegenheiten des Alltags eingreift.
+							Ning Ying schafft es, den Effekt der Ideologie auf den einzelnen Bürger sanft einzufangen — von jungen Polizisten,
+							die durch die Stadtviertel patrouillieren, über alte Frauen, die die Fortpflanzung ihrer Nachbarn überwachen, bis
+							zu Eltern, die versuchen, ihre Kinder zu ‹passenden› Mitgliedern der Gesellschaft zu formen.</p>
+						<p>Ning Ying arbeitet hier ausschließlich mit Laiendarstellern. Das Fehlen von Musik und dramatischen Effekten gibt schnellen
+							Einstellungen, Gesten und Wortwechseln eine besondere, spontane Kraft. Dieser Realismus des Alltäglichen im quasi-dokumentarischen
+							Stil ist eine starke künstlerische Wahl in einem Land wie China und betrifft ebenso die Tonarbeit:</p>
+						<figure>
+							<blockquote>Ich glaube, dies ist einer der ersten chinesischen Filme, dessen Ton direkt mit dem Bild aufgenommen wurde. Das war
+								mir damals ein sehr wichtiges Anliegen. Es war aber auch deshalb sinnvoll, da ich die Laiendarsteller nach dem Dreh
+								schlecht bitten konnte, noch einmal alles genauso zu wiederholen. Der Großteil der chinesischen Filmproduktionen
+								wurde damals nachvertont.</blockquote>
+							<figcaption>
+								<cite>Ning Ying</cite>
+							</figcaption>
+						</figure>
+						<p>Man fragt sich, wie dieser Film ins Ausland gelangt ist. Angesiedelt zwischen Rossellini und Tati, ist dieser preisgekrönte
+							zweite Film der Peking-Trilogie eine erfrischende, subtil subversive Darstellung Pekings Mitte der 90er Jahre.</p>
+					</div>
+					<footer>Spielfilm, 102 min, China 1995. Buch/Regie: Ning Ying, Kamera: Zhi Lei, Wu Hongwei, Darsteller: Li Zhanho, Wang Liangui,
+						Zhao Zhiming, Liu Yingshu Mandarin mit englischen Untertiteln</footer>
+
+				</section>
+				<section id="ilovebejing">
+					<h3>I Love Beijing
+						<small> 夏日暖样样 </small>
+						<small>Xiari nuan yangyang</small>
+					</h3>
+					<div class="columns">
+						<p>Dezi ist ein junger Taxifahrer aus Peking. Seinem Taxi zu folgen gleicht einer Stadtrundfahrt durch Peking. Die wechselnden
+							Passagiere in seinem Wagen bilden einen Mikrokosmos der urbanen Szene — mitunter übersteigt das auch Dezis Verständnis.
+							Seine Kapazität für Frauen hat jedoch keine Grenzen. Er wagt sich durch eine sommerlange Serie von kurzen Beziehungen
+							mit Frauen aus allen Gesellschaftsschichten: einer provinziellen Kellnerin, einer beliebten Radio-Moderatorin, einer
+							Lehrerin und einem Bauernmädchen vom Land. Auf dem Weg wird er betrogen, verwirrt, benutzt und sogar ein wenig geliebt.</p>
+						<p>Die Kamera wandert von einem Ort zum anderen, von einer Frau zur anderen, von einer Idee zur nächsten, ganz den Fantasien
+							des Fahrers folgend. Es ist das Zerbröckeln des modernen Lebens, das so dargestellt und illustriert wird, seine Inkohärenz,
+							seine Unordnung, seine Sinnlosigkeit. Die Musik selbst, in westlichen Klängen, akzentuiert den Eindruck des Verlusts
+							kultureller Referenzen in einer Stadt, in der Baustellen und Kräne die Hauptmerkmale der urbanen Landschaft geworden
+							sind.
+						</p>
+					</div>
+					<footer>Spielfilm, 80 min, China 2001. Buch/Regie: Ning Ying, Kamera: Gao Fei, Darsteller: Yu Lei, Zuo Baitao, Tao Hong, Gai
+						Yi Mandarin mit deutschen Untertiteln</footer>
+
+				</section>
+				<section id="fragmenteeinerreise">
+					<h3>Fragmente einer Reise nach China</h3>
+					<div class="columns">
+						<p>Eine junge europäische Studentin reist nach China. Sie findet sich in einer Welt der Poesie und der
+							<i>Zeichen</i> wieder, die sie fasziniert und überfordert, und die sie nur langsam zu entschlüsseln lernt. Dabei begleitet
+							sie eine Videokamera — 20 Minuten pro Tag, mehr gibt der alte Akku nicht her.
+						</p>
+						<figure class="break">
+							<blockquote>Ich wusste wenig über China. Ich konnte kein einziges chinesisches Wort aussprechen, ohne dabei rot zu werden. Doch
+								mein Mangel an Vorbereitung hat mich besonders empfänglich gemacht, denn ich erwartete quasi nichts und alles. Was
+								folgte, war eine ziemlich unerwartete Erfahrung: Ich befand mich in einer Parallelwelt, die ganz anders ablief, andere
+								Codes zu haben schien, wo man anders wahrnahm, anders urteilte und sogar anders fühlte, kurz: wo das Leben — auch
+								meines — plötzlich ein anderes war.</blockquote>
+							<figcaption>
+								<cite>Johanna Pauline Maier</cite>
+							</figcaption>
+						</figure>
+						<p>Die Regisseurin verbindet in ihrem Film Videoaufnahmen aus dem Peking der späten 90er Jahre in einem — aus heutiger
+							Sicht — technisch veralteten Videoformat mit einem elegant kompilierten Text aus Alltagsbeobachtungen, chinesischen
+							Erzählungen und kulturphilosophischen Gedanken. Wir sehen Kinder beim Drachen steigen auf dem Platz des himmlischen
+							Friedens. Wir sehen Fische im Aquarium, Frauen beim Friseur und die Blicke der chinesischen Männer, die es lustig
+							finden, von einer jungen Ausländerin gefilmt zu werden. So entsteht ein poetisches Dokument einer Stadt im Abriss
+							und Umbau zum einen, einer Phase im Leben einer jungen Frau auf der anderen Seite.</p>
+					</div>
+					<footer>Dokumentarfilm, 96 min, China / Deutschland / Frankreich 2018. Regie, Kamera, Schnitt: Johanna Pauline Maier. Deutsch
+						und Mandarin mit englischen Untertiteln</footer>
+
+				</section>
+			</div>
+		</article>
+
+		<article id="texte">
+			<header>
+				<ul id="texteNav"
+						class="sliderNav">
+					<li>
+						Interview
+					</li>
+					<li>
+						Essay
+					</li>
+				</ul>
+			</header>
+			<div id="texteSlider">
+				<section id="interview">
+					<header>
+						<h3>Ein Stück visuelles Gedächtnis</h3>
+						<div class="byline">Interview mit der Regisseurin Ning Ying</div>
+					</header>
+					<div class="columns">
+						<p>Als ich anfing, in Italien zu studieren, sah ich viele Filme. Plötzlich verstand ich, dass diese Filme, wenn man sie
+							alle zusammen nimmt, eine Art visuelles Gedächtnis bilden, das das Leben eines ganzen Volkes und seine moderne Geschichte
+							zeigt. Unser Kino in China hatte damals nichts mit dem wirklichen Leben zu tun. Es war immer etwas anderes, vielleicht
+							eine Vorstellung der Politik: Unsere Fantasie über unsere Zukunft sollte romantisch sein ... wir sollten eine sehr
+							starke Nation werden oder die Besten der Welt, also immer sehr weit weg von unserem wirklichen Leben. </p>
+						<p>In Italien begann ich, mit Bertolucci an seinem Großprojekt
+							<cite>Der letzte Kaiser</cite> zu arbeiten. Ich stieg schon mit der ersten Drehbuchversion in das Projekt ein. Und so fing
+							ich an, mit einem großen Meister zu arbeiten. Bertolucci hatte eine sehr genaue Vorstellung von der Recherche für
+							das Drehbuch und auch für die Vorbereitung des Drehs. Ich sah, wie all dies eine tiefe Verbindung mit der Realität
+							hatte, auch wenn es ein Film über den letzten Kaiser war, also eigentlich etwas, das sehr weit von der Realität entfernt
+							sein könnte. Diese Art, die Beziehungen von wirklichem Leben und Film zu sehen, haben mich stark geprägt.</p>
+						<p> Die wesentliche Bedeutung des Kinos liegt für mich darin, dass man mit ihm ein Stück visuelles Gedächtnis fabrizieren
+							kann. Von Anfang an war es mein Ziel, eine solche moderne Erinnerung aufzubauen. Ich versuchte, visuell zu analysieren,
+							was das bedeutet, und begann zu verstehen, dass Bilder aus zwei wichtigen Elementen bestehen: Das eine ist das Gesicht
+							der Schauspieler, und das andere ist das Gesicht der Stadt — die Architektur.</p>
+						<p>In der Architektur einer Stadt kann man eine Menge Sinn finden, Zeichen der Epoche, politische Botschaften, warum diese
+							Art von Architektur gebaut wurde, Zeichen der wirtschaftlichen Entwicklung ... Ich begann, mich zwischen den verschiedenen
+							Vierteln Pekings hin und her zu bewegen, um nach solchen Symbolen zu suchen. Am Ende hatte ich verstanden: Ich suchte
+							nach einer Realität, die im Begriff war, vor unseren Augen zu verschwinden. </p>
+						<p>In den achtziger Jahren hat sich China nicht so sehr verändert. Doch Anfang der Neunziger Jahre begann der erste Abriß
+							der Stadt. Zuerst war der Rhythmus noch langsam, aber in der Mitte der neunziger Jahre wurde es schneller, und Ende
+							der neunziger Jahre war die Stadt ein riesiges Schlachtfeld. Schon Anfang der 90er Jahre ahnte ich dunkel, dass eine
+							gewaltige Veränderung losging. Doch die Leute machten sich darüber nicht so viele Gedanken. Auch mir war noch nicht
+							bewusst, wie dramatisch diese Veränderung werden könnte. Aber dann gibt es diese sogenannte künstlerische Intuition,
+							und ich begann, das Projekt der Peking-Trilogie vorzubereiten. Es sind drei Spielfilme, die 1991, 1994 und 1999 gedreht
+							wurden. </p>
+						<p>Heute haben sich die Chinesen total verändert, weil die Gebäude verschwunden sind. Ich denke, unser Gedächtnis ist
+							tief verbunden mit der Architektur, mit den Steinen. Wenn sie verschwinden, verschwinden die Erinnerungen der Menschen.
+							In China spricht man noch immer nicht viel darüber, aber all das ist ein Drama für die Psyche der Menschen, verursacht
+							durch das zu schnelle Verschwinden von Erinnerungen. Die Architektur und das Gesicht der Stadt haben sich zu schnell
+							verändert, das gesamte Konzept ist innerhalb von zehn Jahren verschwunden! Wenn ich mir heute die Peking-Trilogie
+							ansehe, verstehe ich, dass hier eine sehr wichtige Arbeit gemacht wurde — visuell gesehen.
+						</p>
+					</div>
+					<footer>Das Interview führte
+						<cite>Visible City Project</cite>, übersetzt und kompiliert von Johanna Pauline Maier</footer>
+				</section>
+
+				<section id="essay">
+					<header>
+						<h3>Sich einen neuen Sinn zulegen</h3>
+						<div class="byline">Von Johanna Pauline Maier</div>
+					</header>
+					<div class="columns">
+						<p>Um moderne Chinesen zu verstehen, ist es sinnvoll, in ihre oft nicht mehr sichtbare Vergangenheit zu schauen. Die Filmreihe
+							befasst sich mit einem Stück chinesischen Alltags, das so nicht mehr gelebt wird, scheinbar aus einer weit zurückliegenden
+							Zeit stammt und dennoch Teil des Heute bildet. </p>
+						<p>Als ich im Herbst 1999 nach Peking ging, um dort zwei Jahre zu studieren, fand ich mich in einer Stadt wieder, die
+							zum Großteil Baustelle war. Die Altstadt wurde abgerissen und mit anonymen Wohntürmen ersetzt. Ich fand es unfassbar.
+							Doch mein (vielleicht europäischer) Reflex, das Alte festzuhalten, stieß in meinem Umfeld auf wenig Widerhall. Die
+							ausländischen Kommilitonen waren möglicherweise zu eingeschüchtert, um ein kritisches Urteil zu fällen (sie kamen
+							auch nicht immer aus Europa), und die chinesischen Studenten wiesen mich bei meinen Bedenken darauf hin, dass das
+							Leben in den Hutongs [Altstadtgassen] scheußlich sei.
+						</p>
+						<p> Es war noch die Zeit, in der man als Ausländer auf dem Campus leben sollte. Der Campus lag eine halbe bis ganze Stunde
+							durch die verstopften Straßen vom Zentrum entfernt. Ich zog aus, auch wenn es illegal war und begann, als scheinbar
+							einzige in meinem Umfeld, festzuhalten, was soeben dabei war zu verschwinden, und kam so zumindest mit jenen in Kontakt,
+							die direkt betroffen waren: die Einwohner der Altstadt. Doch das Thema wurde so nur komplexer, denn sicherlich sah
+							ich, wie eine ganze Lebensform — die mit einem bestimmten Lebensraum zusammenhing — hier zu Ende ging. Aber ich sah
+							auch unglaublich viel Armut, und viele wollten sich nicht äußern, besonders nicht vor einer Fremden. Und der Vorgang
+							auf den Baustellen nahm seinen Lauf. Und mein Unwohlsein mit dem, was passierte, blieb, und ebenso meine Zweifel an
+							diesem Unwohlsein ... </p>
+						<p>Die Informationswege sind offenbar nicht ideal gewesen, denn obwohl ich im zweiten Jahr meines Aufenthaltes direkt
+							an der Quelle saß − der Filmakademie von Peking − habe ich nichts von Ning Ying und ihren Filmen gehört, die zur gleichen
+							Zeit noch entstanden. Erst viel später, in einem Seminar von Luisa Prudentino über chinesischen Film in Paris, habe
+							ich erfahren, dass sich parallel zu mir durchaus eine ganze Menge chinesischer Künstler und Filmemacher mit diesem
+							Thema befasst haben. Darunter eben auch Ning Ying mit ihrer Trilogie. </p>
+						<p>Mein Videomaterial aus dieser Zeit lag in der Schublade. Oft habe ich mir diese 40 Stunden angeschaut, doch es machte
+							mich nur ratloser. Das lag sicher auch an anderen Filmprojekten, die mich inzwischen beschäftigten, aber der Hauptgrund
+							war, dass sich mein Blick schon verändert hatte: Ich war nicht mehr jene, die in China lebte. Doch weglegen konnte
+							ich das Material auch nicht. Es war binnen weniger Jahre zum Dokument eines Pekings geworden, das es so nicht mehr
+							gibt. Mein Material schien mir nun ganz andere Dinge zu zeigen, als ich ursprünglich beabsichtigt hatte. Es hatte
+							sich quasi einen neuen Sinn zugelegt. Diese und andere Überlegungen wurden schließlich zum Auftakt einer Idee, wie
+							ich auf das Material reagieren könnte.</p>
+					</div>
+
+				</section>
+			</div>
+		</article>
+		<footer id="impressum">
+			<section class=" cta ">
+				<a href="mailto:susanne.quester{ät}gmail{pkt}com">
+					Kontakt</a>
+				<a href="https://www.facebook.com/neuesasiatischeskino">
+					Facebook</a>
+				<a href="http://www.mandarinenfilm.de/neuesasiatischeskino/media/2018_ning/NingYing_flyer_5_web.pdf">
+					Programmflyer (PDF)</a>
+				<a href="http://www.mandarinenfilm.de/neuesasiatischeskino/media/2018_ning/NingYing_Pressefotos.zip">
+					Pressefotos (ZIP)</a>
+			</section>
+			<section>
+				<p>Programm, Texte:
+					<a href="http://www.forbiddenlibraries.com">Johanna Pauline Maier</a>, Organisation, Redaktion:
+					<a href="http://www.mandarinenfilm.de/">Susanne Mi-Son Quester</a>, Gestaltung:
+					<a href="http://florian.geierstanger.org/">Florian Geierstanger</a>. Vielen Dank an Luisa Prudentino, Christoph Schwarz,
+					<a href="http://werkstattkino.de/">Bernd Brehmer</a>
+				</p>
+				<p>
+					<a href="https://www.muenchen.de/rathaus/Stadtverwaltung/Kulturreferat.html">
+						<img src="img/2018_ning/kulturreferat_muenchen_gefoerdert.svg"
+								 alt="Diese Veranstaltung wird gefördert von der Landeshauptstadt München Kulturreferat">
+					</a>
+				</p>
+			</section>
+
+		</footer>
+	</div>
+
+	<!-- Series Navigation -->
+	<script>
+		document.querySelector('#nav').addEventListener('click', function (e) {
+
+			[].map.call(document.querySelectorAll('#nav'), function (el) {
+				el.classList.toggle('open');
+			});
+		});
+	</script>
+	<!-- Tiny Slider -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/min/tiny-slider.js "></script>
+
+	<script>
+		var stillsSlider = tns({
+			container: '#stillsSlider',
+			items: 1,
+			slideBy: 'page',
+			mouseDrag: true,
+			autoplay: false,
+			controls: false,
+			arrowKeys: true,
+			navContainer: '#stillsNav'
+		});
+
+		var filmeSlider = tns({
+			container: '#filmeSlider',
+			items: 1,
+			slideBy: 'page',
+			mouseDrag: true,
+			autoplay: false,
+			controls: false,
+			autoHeight: true,
+			arrowKeys: false,
+			navContainer: '#filmeNav'
+		});
+
+		var texteSlider = tns({
+			container: '#texteSlider',
+			items: 1,
+			slideBy: 'page',
+			mouseDrag: true,
+			autoplay: false,
+			controls: false,
+			autoHeight: true,
+			arrowKeys: false,
+			navContainer: '#texteNav'
+		});
+	</script>
+
+	<!-- Piwik -->
+	<script type="text/javascript">
+		var _paq = _paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(["setCookieDomain", "*.mandarinenfilm.de"]);
+		_paq.push(["setDomains", ["*.mandarinenfilm.de"]]);
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function () {
+			var u = "http://www.geierstanger.org/stats/";
+			_paq.push(['setTrackerUrl', u + 'piwik.php']);
+			_paq.push(['setSiteId', '10']);
+			var d = document,
+				g = d.createElement('script'),
+				s = d.getElementsByTagName('script')[0];
+			g.type = 'text/javascript';
+			g.async = true;
+			g.defer = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore(g, s);
+		})();
+	</script>
+	<noscript>
+		<p>
+			<img src="http://www.geierstanger.org/stats/piwik.php?idsite=10&rec=1"
+					 style="border:0;"
+					 alt="" />
+		</p>
+	</noscript>
+	<!-- End Piwik Code -->
+
+</body>
+
+</html>

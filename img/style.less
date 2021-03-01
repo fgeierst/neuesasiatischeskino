@@ -1,0 +1,292 @@
+/* ------ general */
+
+* {
+  border-radius: 0 !important;
+}
+body {
+  padding-top: 2em;
+  padding-bottom: 4em;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+h1, h2, h3, h4 {
+  font-size: 100%;
+  font-weight: bold;
+  margin: 3em 0 2em 0
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
+}
+.jumbotron {
+  background-color: #FF0004;
+  color: #FFFFFF;
+  padding: 35px !important;
+  margin: 2em 0 4em 0;
+}
+.jumbotron p {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+a, a:hover, a:active, a:focus {
+  color: #000000;
+  text-decoration: none;
+}
+
+.programmtabelle {
+  margin: 1em 0 2em 0;
+}
+.programmtabelle tr:first-child td {
+  border: none !important;
+}
+.programmtabelle td {
+  border-top: 1px solid #000000 !important;
+}
+.programmtabelle td {
+  text-align: center;
+  width: 12.5%;
+  vertical-align: middle !important;
+}
+.Programm {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.Programm .col-md-6 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+blockquote {
+  border: 0;
+  display: inline;
+}
+.chapter {
+  padding-bottom: 1em;
+}
+h3 {
+  margin-top: 0;
+  text-align: center;
+}
+.img-caption {
+  text-align: center;
+  margin-top:0.5em;
+}
+footer {
+  border-top: 1px solid #000000;
+  margin: 2em 0 4em 0;
+}
+.carousel-indicators li {
+  background-color: #E7E7E7 !important;
+  border:none !important;
+
+}
+.carousel-indicators .active {
+  background-color: #C0C0C0 !important;
+  border:none !important;
+  width: 10px;
+  height:10px;
+  margin:1px;
+}
+.carousel-indicators {
+  bottom: -2em;
+}
+.titel {
+  margin-bottom: 2em
+}
+.carousel {color:#323232; }
+/*.carousel:hover { color:#323232;}*/
+
+.glyphicon {padding-right:1em; padding-bottom:1em}
+
+img.gefoerdert {
+  padding:1.5em 0; 
+  width: 150px;
+}
+
+
+/* ------ @media phone */
+
+@media (max-width: 550px) {
+  body {
+    font-size: 14px;
+  }
+  blockquote {
+    font-size: 14px;
+  }
+  .jumbotron {
+    padding: 1em !important;
+  }
+  .jumbotron p {
+    font-size: 14px !important;
+  }
+  #nav {
+  font-size: 14px !important;
+  }
+}
+
+
+
+/* ------ .whang ------ #FF0004 ------*/
+
+.whang a.homebutton { color: #FF0004; font-weight:bold;}
+
+.whang #nav h2 a { color: #FF0004; }
+
+.whang #nav li { background-color: #FF0004; }
+
+
+
+/* ------ .hamaguchi ------ #7ab556 ------*/
+
+.hamaguchi .jumbotron {
+  background-color: #7ab556;
+}
+.hamaguchi .filmtitel {
+  font-size:85%;
+}
+.hamaguchi .filmtext {
+  font-weight:bold;
+}
+.hamaguchi blockquote {
+    font-size:inherit; line-height:inherit;
+  }
+.hamaguchi blockquote  footer {
+  border:none;
+  margin:0;
+  display:inline;
+  padding-left:1em;
+  color:inherit;
+}
+.hamaguchi blockquote p {
+  display:inline;
+}
+.hamaguchi a.homebutton {
+  color: #7ab556;
+  font-weight:bold;
+}
+
+.hamaguchi #nav h2 a {
+  color: #7ab556;
+}
+
+.hamaguchi #nav h2 a {
+  color: #7ab556;
+}
+
+.hamaguchi #nav li {
+  background-color: #7ab556;
+}
+
+/* ------ .yang------ color: #468eb6 ------*/
+@color-yang: #468eb6;
+
+.yang { 
+  .jumbotron {
+    background-color: @color-yang;
+  }
+  .filmtitel {
+    font-size:85%;
+  }
+  .filmtext {
+    font-weight:bold;
+  }
+  blockquote {
+      font-size:inherit; line-height:inherit;
+  }
+  blockquote footer {
+    border:none;
+    margin:0;
+    display:inline;
+    padding-left:1em;
+    color:inherit;
+  }
+  blockquote p {
+    display:inline;
+  }
+  a.homebutton {
+    color: @color-yang;
+    font-weight:bold;
+  }
+  .Programm strong {
+    color: @color-yang;
+    text-align: right;
+    display: block;
+  }
+  .interview .question {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .interview p.answer {
+    text-indent: 1.5em;
+  }
+   .tab-pane h3 em {
+    font-weight: normal;
+    font-style: normal;
+  }
+  #nav h2 a {
+    color: @color-yang;
+  }
+  #nav li {
+    background-color: @color-yang;
+  }
+  #nav a.pull-right {
+    color: @color-yang;
+  }
+  .blue {
+    color: @color-yang;
+    font-weight: bold;
+  }
+  .programmtabelle {
+  margin: 1em 0 0.5em 0;
+  }
+  .programmtabelle > div {
+    display: inline-block;
+    margin: 0 0 1em 0;
+    vertical-align: top;
+    max-width: 120px;
+  }
+  .programmtabelle > div > div:first-child {
+    border-bottom: 1px solid black;
+  }
+  .programmtabelle > div > div {
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .yang .programmtabelle > div > div {
+    padding: 0.2em 0.5em;
+  }
+  .yang .programmtabelle > div {
+    max-width: 100px;
+  }
+}
+
+
+/* ------ navbar ------ */
+
+#nav {
+  margin-bottom: 1em;
+  font-size: 18px;
+  a:hover {
+    text-decoration: underline;
+  }
+  h2, #nav ul {
+    margin: 0;
+  }
+  li {
+    border-top: 1px solid white;
+    padding: 10px;
+  }
+  li a {
+    color: white;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+    margin-bottom: 2em;
+  }
+  
+}
